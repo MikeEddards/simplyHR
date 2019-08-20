@@ -1,0 +1,45 @@
+$font: 'Nunito', sans-serif;
+$red: #FF5A5F;
+$white: #FEFEFD;
+$black: #3C3C3C;
+$green: #86E3D5;
+$blue: #49C6E5;
+$gray: #B4B4BA;
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $white;
+    border-bottom: 1px solid $black;
+    .logo{
+        margin: 1.5em 2em;
+        img{
+            width: 20em;
+        }
+    }
+    .addEmployee{
+        align-self: flex-end;
+        .addEmployeeBtn{
+            margin: 1em 3em;
+            padding: 1em 1.5em;
+            font-family: $font;
+            border: 1px solid $black;
+            background: $blue;
+            color: $white;
+            text-shadow: .5px .5px 1px $black;
+            font-size: 1.2em;
+            font-weight: 500;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                background: $green;
+                color: $black;
+                text-shadow: .5px .5px 1px $white;
+            }   
+        }
+    }
+}

@@ -1,0 +1,51 @@
+header {
+  width: 100vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FEFEFD;
+  border-bottom: 1px solid #3C3C3C;
+}
+
+header .logo {
+  margin: 1.5em 2em;
+}
+
+header .logo img {
+  width: 20em;
+}
+
+header .addEmployee {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header .addEmployee .addEmployeeBtn {
+  margin: 1em 3em;
+  padding: 1em 1.5em;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #3C3C3C;
+  background: #49C6E5;
+  color: #FEFEFD;
+  text-shadow: 0.5px 0.5px 1px #3C3C3C;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header .addEmployee .addEmployeeBtn:hover {
+  background: #86E3D5;
+  color: #3C3C3C;
+  text-shadow: 0.5px 0.5px 1px #FEFEFD;
+}
+/*# sourceMappingURL=style.css.map */
