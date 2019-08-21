@@ -12,7 +12,6 @@ header {
           align-items: center;
   background: #FEFEFD;
   border-bottom: 1px solid #3C3C3C;
-  overflow-y: hidden;
 }
 
 header .logo {
@@ -35,7 +34,7 @@ header .logo img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  overflow-y: auto;
+  overflow: scroll;
   background: #f0f0f0;
 }
 
