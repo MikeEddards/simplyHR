@@ -23,7 +23,7 @@ const db = mysql.createPool({
     database: DATABASE
 });
 
-
+// establish db connection
 db.getConnection((err) => {
     if(err){
       console.log('Error connecting to Db');
@@ -31,31 +31,38 @@ db.getConnection((err) => {
     }
     console.log('db connected');
   });
- 
+
+ // endpoints 
+
+ // Get all employees
 app.get('/api/employees', (req, res) => {
       db.query("SELECT * FROM employees", (err, result) => {
         if(err) console.log(err);
       res.status(200).send(result);
     });
 })
+// Add new employee to db
 app.post('/api/employee', (req, res) => {
     const {first_name,
         last_name,
         email,
         phone} = req.body
-    
     db.query(`INSERT INTO employees (first_name, last_name, email, phone) VALUES ( '${first_name}', '${last_name}','${email}', '${phone}')`  , (err, result) => {
         if(err) console.log(err);
         res.sendStatus(200)
     })    
     
 })
+
+// Delete employee
 app.delete('/api/employee/:id', (req, res) => {
     db.query(`DELETE from employees WHERE id = ${req.params.id}`, (err, result) => {
         if(err) console.log(err)
         res.sendStatus(200)
     })
 })
+
+// Edit employee
 app.put('/api/employee/:id', (req, res) => {
     const {first_name,
         last_name,

@@ -4,7 +4,7 @@ CREATE TABLE `employees`
   `first_name` varchar(20),
   `last_name` varchar(30),
   `email` varchar(50),
-  `phone` integer,
+  `phone` varchar(30),
   PRIMARY KEY (id)
 );
 

@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "libphonenumber-js": "^1.7.22",
     "massive": "^5.11.2",
     "mysql": "^2.17.1",
     "react": "^16.9.0",
