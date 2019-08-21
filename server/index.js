@@ -14,7 +14,7 @@ const app = express()
 
 
 app.use(express.json())
-// app.use( express.static( `${__dirname}/../build` ) );
+app.use( express.static( `${__dirname}/../build` ) );
 
 const db = mysql.createPool({
     host: DB_HOST,
